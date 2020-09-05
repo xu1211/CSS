@@ -1,15 +1,19 @@
+[toc]
 # CSS
 
 
 ## 常用属性
-CSS的定位机制有3种：文档流、浮动（float：left/right/none）和定位 （position:static/relative/absolute/）。
+CSS的定位机制有3种：
+1. 文档流
+1. 浮动（float：left/right/none）
+1. 定位 （position:static/relative/absolute/）。
 
 > 文档流：将窗体自上而下分成一行一行,并在每行中按从左至右的挨次排放元素,即为文档流。\
 每个块级元素都独有一行,一切元素均可生成子行用于摆放子元素 浮动元素则按规则浮在行的一端. 若当时行容不下, 则另起新行再浮动。\
 有三种状况将使得元素离开文档流而存在,分别是`浮动、绝对定位、固定定位`.
 
 
-### display
+### [display属性](./demo/display.html)
 每个元素都有该属性,来确定元素类型
   -  none	隐藏元素,不占空间
   -  inline  默认属性内联元素,没宽高属性,不独占一行 (span,输入框,图片,引用...)
