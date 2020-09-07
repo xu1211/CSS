@@ -2,7 +2,7 @@
 # CSS
 
 
-## 常用属性
+## 定位机制
 CSS的定位机制有3种：
 1. 文档流
 1. 浮动（float：left/right/none）
@@ -13,6 +13,19 @@ CSS的定位机制有3种：
 有三种状况将使得元素离开文档流而存在,分别是`浮动、绝对定位、固定定位`.
 
 
+### [float 浮动](./demo/float.html)
+  - float：left/right/none;
+浮动元素脱离文档流 不占任何文档流空间，
+而浮动元素之间的定位照样基于正常的文档流，然后从文档流中抽出并尽能够远的挪动至左侧或许右侧。当一个元素脱离正常文档流后，依然在文档流中的其他元素将忽略该元素并填补其原先的空间。 
+float在绝对定位和display为none时不会被应用
+
+### [position 定位](./demo/position.html)
+  - position: static;      静态定位,`保持文档流`
+  - position: fixed;       固定定位,相对于浏览器固定 `脱离文档流`
+  - position: relative;    相对定位,元素相对其正常位置移动 `保持文档流`
+  - position: absolute;    绝对定位,元素相对于最近的已定位父元素移动，如果元素没有已定位的父元素，那么它的位置相对于\<html>: `脱离文档流`
+  - position: sticky;      粘性定位,元素是依赖于用户的滚动 在 relative 与 fixed 定位之间切换。2017年浏览器才支持
+
 ### [display属性](./demo/display.html)
 每个元素都有该属性,来确定元素类型
   -  none	隐藏元素,不占空间
@@ -22,22 +35,7 @@ CSS的定位机制有3种：
   -  table   块级表格
   -  flex    弹性盒
 
-### float 浮动
-  - float：left/right/none;
-浮动元素脱离文档流 不占任何文档流空间，
-而浮动元素之间的定位照样基于正常的文档流，然后从文档流中抽出并尽能够远的挪动至左侧或许右侧。当一个元素脱离正常文档流后，依然在文档流中的其他元素将忽略该元素并填补其原先的空间。 
-
-### position 定位
-
-  - position: static;      静态定位,`保持文档流`
-  - position: fixed;       固定定位,相对于浏览器固定 `脱离文档流`
-  - position: relative;    相对定位,元素相对其正常位置移动 `保持文档流`
-  - position: absolute;    绝对定位,元素相对于最近的已定位父元素移动 `脱离文档流`
-  - position: sticky;      粘性定位,元素是依赖于用户的滚动 在 relative 与 fixed 定位之间切换。2017年浏览器才支持
-
-
-
-### 溢出元素处理
+### [溢出元素处理](./demo/overflow.html)
   - overflow: visible;
     - visible	默认值。内容不会被修剪，会呈现在元素框之外。
     - hidden	内容会被修剪，并且其余内容是不可见的。

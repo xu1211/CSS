@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>position</title>
+    <style>
+        div.static {
+            position: static;
+            border: 3px solid #73AD21;
+        }
+
+        div.fixed {
+            position: fixed;
+            top: 30px;
+            right: 5px;
+            border: 3px solid #73AD21;
+        }
+
+        div.relative_left {
+            position: relative;
+            left: -20px;
+            border: 3px solid #73AD21;
+        }
+
+        div.relative_right {
+            position: relative;
+            left: 20px;
+            border: 3px solid #73AD21;
+        }
+
+        div.absolute {
+            position: absolute;
+            left: 200px;
+            top: 150px;
+            border: 3px solid #73AD21;
+        }
+
+        div.sticky {
+            position: sticky;
+            left: 100px;
+            top: 200px;
+            border: 3px solid #73AD21;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="static">
+        position: static
+    </div>
+    <div class="fixed">
+        position: fixed 相对于浏览器固定
+    </div>
+    <div class="relative_left">
+        position: relative 相对于其正常位置向左移动
+    </div>
+    <div class="relative_right">
+        position: relative 相对于其正常位置向右移动
+    </div>
+    <div class="absolute">
+        position: absolute 相对于最近的已定位父元素/html标签移动
+    </div>
+    <div class="sticky">
+        position: sticky 基于用户的滚动位置来定位
+    </div>
+    <div style="padding-bottom:2000px">
+    </div>
+</body>
+
+</html>
