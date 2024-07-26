@@ -27,6 +27,7 @@ float在绝对定位和display为none时不会被应用
   - position: sticky;      粘性定位,元素是依赖于用户的滚动 在 relative 与 fixed 定位之间切换。2017年浏览器才支持
 
 ### [display属性](./demo/display.html)
+在 css 中实现页面布局的主要方法是设定display属性的值。
 每个元素都有该属性,来确定元素类型
   -  none	隐藏元素,不占空间
   -  inline  默认属性内联元素,没宽高属性,不独占一行 (span,输入框,图片,引用...)
@@ -43,9 +44,15 @@ float在绝对定位和display为none时不会被应用
     - auto	    如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。
     - inherit	规定应该从父元素继承 overflow 属性的值。
 
-## css布局
-1. 布局的传统解决方案，基于盒状模型，依赖 display 属性 + position 属性 + float 属性。它对于那些特殊布局非常不方便，比如，垂直居中就不容易实现
-2. Flex "弹性布局"，可以简便、完整、响应式地实现各种页面布局。目前，它已经得到了所有浏览器的支持，这意味着，现在就能很安全地使用这项功能。
+## css layout 网页布局
+https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout
+- 流布局
+默认的 HTML 文档流 布局
+- 浮动 + 定位
+布局的传统解决方案，基于盒状模型，依赖 display 属性 + position 属性 + float 属性。
+- Flex box 弹性布局
+`display:flex`
+设计横向或纵向的布局
 
 http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
 
@@ -55,4 +62,8 @@ http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
 
 
 
-3. grid "网格布局"
+- grid 网格布局
+`display: grid`
+设计用于同时在两个维度上把元素按行和列排列整齐(像二维网格一样)。
+
+- 表格布局
