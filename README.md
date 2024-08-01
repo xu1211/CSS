@@ -1,6 +1,6 @@
 [toc]
 # CSS
-
+ref: https://www.runoob.com/cssref/css-reference.html
 
 ## 定位机制
 CSS的定位机制有3种：
@@ -26,7 +26,7 @@ float在绝对定位和display为none时不会被应用
   - position: absolute;    绝对定位,元素相对于最近的已定位父元素移动，如果元素没有已定位的父元素，那么它的位置相对于\<html>: `脱离文档流`
   - position: sticky;      粘性定位,元素是依赖于用户的滚动 在 relative 与 fixed 定位之间切换。2017年浏览器才支持
 
-### [display属性](./demo/display.html)
+### [display 显式属性](./demo/display.html)
 在 css 中实现页面布局的主要方法是设定display属性的值。
 每个元素都有该属性,来确定元素类型
   -  none	隐藏元素,不占空间
@@ -36,7 +36,7 @@ float在绝对定位和display为none时不会被应用
   -  table   块级表格
   -  flex    弹性盒
 
-### [溢出元素处理](./demo/overflow.html)
+### [overflow 溢出元素处理](./demo/overflow.html)
   - overflow: visible;
     - visible	默认值。内容不会被修剪，会呈现在元素框之外。
     - hidden	内容会被修剪，并且其余内容是不可见的。

@@ -1,19 +1,26 @@
 # css flex布局
-```
-// flex布局
+弹性盒子模型
+
+Flex容器（flex container）所有子元素自动成为容器成员，称为Flex项目（flex item）
+![alt 属性文本](./flex/flex.png)
+
+ref: https://www.runoob.com/w3cnote/flex-grammar.html
+
+## [flex](./flex/flex.html) 布局
 display: flex;
 
-// flex direction 布局方向
+### [flex direction](./flex/flex-direction.html) 布局方向
 flex-direction: row 水平|row-reverse 水平逆向|column 垂直|column-reverse 垂直逆向|initial 默认|inherit 继承父;
 
-// flex align 对齐方式
+### [flex align](./flex/flex-align.html) 对齐方式
 align-items: stretch|center|flex-start|flex-end|baseline|initial|inherit;
 
-// flex grow\shrink\basis 子元素空间
+### flex grow\shrink\basis 子元素空间
 flex: 扩展量flex-grow 收缩量flex-shrink 长度flex-basis|auto|initial|inherit;
 
-// flex wrap 弹性换行
+### flex wrap 弹性换行
 flex-wrap: wrap;
+
 
 // 间距
 gap: 0px;
